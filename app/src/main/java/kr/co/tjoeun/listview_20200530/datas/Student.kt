@@ -1,6 +1,8 @@
 package kr.co.tjoeun.listview_20200530.datas
 
-class Student(inputName: String, iby:Int, gender:Boolean) {
+import java.io.Serializable
+
+class Student(inputName: String, iby:Int, gender:Boolean) : Serializable {
 
     val name = inputName // 이름이 기본적으로 String이 되도록
     val birthYear = iby // 생년은 기본으로 Int가 되게
